@@ -4,9 +4,12 @@ public class LearnObjects {
     // Constructor - Is implicit to every class, whether you explicitly declare it or not
     // A constructors job is to create or CONSTRUCT objects of that class
     // This is a constructor
-    LearnObjects(){
+
+
+    LearnObjects() {
 
     }
+
 
     public static void main(String[] args) {
         /*
@@ -21,6 +24,7 @@ public class LearnObjects {
 
         int age = 20;
 
+        // instantiate (instance)
         // Romeo is a reference variable of type Cat
         Cat romeo = new Cat();
         romeo.name = "Romeo";

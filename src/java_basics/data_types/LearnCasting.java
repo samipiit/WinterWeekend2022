@@ -16,7 +16,7 @@ public class LearnCasting {
 //        System.out.println(convertedLong);
 
         // Narrowing
-        int num1 = 50000;
+        int num1 = 32768;
         short shortNum = (short) num1;
 
         System.out.println(shortNum);
