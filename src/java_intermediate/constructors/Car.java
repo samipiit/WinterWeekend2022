@@ -24,7 +24,6 @@ public class Car {
         this.color = color;
     }
 
-
     String make;
     String model;
     String color;

@@ -29,5 +29,4 @@ public class LearnEncapsulation {
     public void setSalary(int salary) {
         this.salary = salary;
     }
-
 }
