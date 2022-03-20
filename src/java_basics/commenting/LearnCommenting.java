@@ -16,6 +16,8 @@ public class LearnCommenting {
         String word = "";
         // HOVER OVER someMethod() TO SEE DOC STRING
         boolean bool = someMethod(x, y, word);
+
+        String.valueOf(5);
     }
 
     /**
@@ -30,8 +32,6 @@ public class LearnCommenting {
      * @return Returns true if ____, else returns false
      */
     static boolean someMethod(int num1, int num2, String word) {
-
-
         int num3 = num1 + num2;
         System.out.println(word);
 

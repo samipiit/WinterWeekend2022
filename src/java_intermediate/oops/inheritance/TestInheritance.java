@@ -1,43 +1,25 @@
 package java_intermediate.oops.inheritance;
 
-import java_intermediate.oops.inheritance.bad_inheritance.Bird;
-
 public class TestInheritance {
 
     public static void main(String[] args) {
-        Car astonMartin = new Car();
-        astonMartin.manufacturer = "Aston Martin";
-        astonMartin.model = "V12 Vantage";
-        astonMartin.color = "Forest Green";
-        astonMartin.horsepower = 675;
-        astonMartin.numOfCylinders = 12;
-        astonMartin.numOfDoors = 2;
-        astonMartin.numOfSeats = 4;
-        astonMartin.typeOfVehicle = "Car";
-        astonMartin.turnOn();
-        astonMartin.turnOff();
-        astonMartin.accelerate();
-        astonMartin.decelerate();
+        Car bmw = new Car("Car", "Motor", "Alpina White", "BMW", "M3 CS",
+                4, 4, "Manual", 8, 6, 4,
+                650, 60);
 
-        Boat boat = new Boat();
-        boat.typeOfVehicle = "Boat";
-        boat.turnOn();
-        boat.turnOff();
-        boat.accelerate();
-        boat.decelerate();
+        // BMW type is also Vehicle type, so both of the following statements will be true
+//        boolean isInstanceVehicle = bmw instanceof Vehicle;
+//        boolean isInstanceCar = bmw instanceof Car;
+//
+//        System.out.println(isInstanceVehicle);
+//        System.out.println(isInstanceCar);
+//
 
-        Train mta = new Train();
-        mta.typeOfVehicle = "Train";
-        mta.turnOn();
-        mta.turnOff();
-        mta.accelerate();
-        mta.decelerate();
-
-        Motorcycle harley = new Motorcycle();
-
-//        Bird penguin = new Bird();
-        // JAVA WILL NOT KNOW WHICH METHOD (from which class) WE ARE CALLING. IS IT FROM THE ANIMAL CLASS OR THE MAMMAL CLASS?
-//        penguin.eat();
+        Vehicle obj = new Vehicle("Car", "Motor", "Alpina White", "BMW",
+                "M3 CS");
+        obj.accelerate();
+        System.out.println();
+        bmw.accelerate();
 
     }
 }
