@@ -1,4 +1,4 @@
-package java_intermediate.fileIO;
+package java_intermediate.fileIO.text_files;
 
 import java.io.*;
 import java.nio.charset.Charset;
@@ -6,7 +6,7 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 
-public class LearnFileIO {
+public class LearnTextFileIO {
 
     /*
     Two Different Types of Paths

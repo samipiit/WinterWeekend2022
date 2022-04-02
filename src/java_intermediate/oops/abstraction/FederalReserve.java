@@ -2,7 +2,7 @@ package java_intermediate.oops.abstraction;
 
 public interface FederalReserve {
 
-    double fedFundsRate = 2;
+    double FED_FUNDS_RATE = 2;
 
     /*
     Interfaces are 100% abstract
